@@ -1,0 +1,36 @@
+body {
+	background-color:#9f8e1b;
+
+}
+
+#container {
+	width:900px;
+	height:1000px;
+	margin:auto;
+}
+
+article #top {
+	float:left;
+	height:300px;
+}
+
+#categories {
+	font-size:25px;
+	color:;
+	margin:auto;
+}
+
+.drinklink {
+	text-decoration:none;
+	color:black;
+	font-size:18px;
+
+	border-color:yellow;
+	width:20px;
+	padding-top:13px;
+}
+
+footer {
+	font-size:11px;
+	clear:both;
+}
