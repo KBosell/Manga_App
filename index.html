@@ -7,33 +7,86 @@
 <body>
 	<div id="container">
 		<header id="top">
-			<h1 id="logo">logo</h1>
-			<h2 id="search">search bar</h2>
+			<h1 class="logo" id="live">logo</h1>
+			<div class="logo" id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+				        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="Search" class="tfbutton">
+				</form>
+			<div class="tfclear"></div>
+			</div>
 		</header>
-	
-		<div id="rotation">
-			<img src="_images/rotation/">
-			<img src="_images/rotation/">
-			<img src="_images/rotation/">
-			<img src="_images/rotation/">
-			<img src="_images/rotation/">
-		</div>
+		<div id="clear"></div>
 
-		<aside>	
-			<h1 id="categories">Categories</h1>
-			<p id="list">
-				<a class="drinklink" href="All.html">All</a>
-				<a class="drinklink" href="Beer.html">Beer</a>
-				<a class="drinklink" href="Cocktails.html">Cocktails</a>
-				<a class="drinklink" href="Liqueurs.html">Liqueurs</a>
-				<a class="drinklink" href="Margarita.html">Margarita</a>
-				<a class="drinklink" href="Punches.html">Punches</a>
-				<a class="drinklink" href="Shots.html">Shots</a>
-				<a class="drinklink" href="Wine.html">Wine</a>
-			</p>
-		</aside>
+		<div class="therest">
 	
-		<footer>&copy; 2014 Master Drinker</footer>
+			<section id="faded">
+				<div class="slides">
+					<img src=".jpg" height="300" width="600" />
+					<img src=".jpg" height="300" width="600" />
+					<img src=".jpg" height="300" width="600" />
+					<img src=".jpg" height="300" width="600" />
+					<img src=".jpg" height="300" width="600" />
+				</div>
+			</section>
+	
+			<aside>	
+				<h1 id="headings">Categories</h1>
+				<div id="list">
+					<div class="drinklink">
+						<a href="_class/All.html"><img src="_images/main/all.jpg"></a></br>
+						<a href="_class/All.html">All</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Beer.html"><img src="_images/main/Beer.jpg"></a></br>
+						<a href="_class/Beer.html">Beer</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Cocktails.html"><img src="_images/main/cocktails.jpg"></a></br>
+						<a href="_class/Cocktails.html">Cocktails</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Liqueurs.html"><img src="_images/main/liqures.jpg"></a></br>
+						<a href="_class/Liqueurs.html">Liqueurs</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Margarita.html"><img src="_images/main/margarita.jpg"></a></br>
+						<a href="_class/Margarita.html">Margarita</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Punches.html"><img src="_images/main/punch.jpg"></a></br>
+						<a href="_class/Punches.html">Punches</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Shots.html"><img src="_images/main/shot.jpg"></a></br>
+						<a href="_class/Shots.html">Shots</a>
+					</div>
+					<div class="drinklink">
+						<a href="_class/Wine.html"><img src="_images/main/wine.jpg"></a></br>
+						<a href="_class/Wine.html">Wine</a>
+					</div>
+			</aside>
+		
+			<footer>&copy; 2014 Master Drinker</footer>
+		</div>
 	</div>
+
+	<script type="text/javascript" src="_js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			console.log('im ready')
+			setTimeout(fade,2000);
+			function fade() {
+				var lastIMG = $("#faded .slides img:last");
+				lastIMG.animate({"opacity":"0"},1000, function() {
+					lastIMG.prependTo("#faded .slides");
+					lastIMG.css({"opacity":"1"});
+					setTimeout(fade,2000);
+				});
+			}
+		
+		});
+			
+
+	</script>
 </body>
 </html>
