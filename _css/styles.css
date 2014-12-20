@@ -1,16 +1,17 @@
 body {
-	background-image:url(pattern2.jpg);
-	background-color:#5e3a1c;
+	background-color:#040406;
 	background-repeat:repeat;
 
 }
 
 #container {
-	width:900px;
+	max-width:900px;
+	min-width:300px;
 	margin:auto;
 }
 
-#live {
+h1 #live {
+	width:300px;
 	float:left;
 }
 
@@ -40,19 +41,20 @@ body {
 
 .drinklink a {
 	text-decoration:none;
-	color:black;
+	color:#6c568f;
 	font-size:18px;
+	font-family:Imperator;
 
 }
 
 .drinklink {
 	padding:13px;
-	background-color:#740007;
+	background-color:#191130;
 	overflow:auto;
 }
 
 .drinklink:hover {
-	background-color:#97040d;
+	background-color:#281c4c;
 }
 
 .drinklink img	{
@@ -61,28 +63,59 @@ body {
 }
 
 footer {
-	font-size:11px;
+	font-size:15px;
 	padding-top:20px;
+	color:#6c568f;
 	clear:both;
+}
+
+h1 {
+	font-family:Imperator;
+	font-size:20px;
+	color:#6c568f;
+	text-decoration:underline;
 }
 
 .Drinkname {
 	font-size:40px;
+	font-family:Renaiss-Italic;
 	text-align:center;
-	color:#97040d;
+	color:#6c568f;
 
+}
+
+#directions {
+	font-size:17px;
+	color:#6c568f;
+	font-family:Imperator;
+	max-width:500px;
+	min-width:300px;
+	float:left;
+}
+
+#ingredients {
+	font-size:15px;
+	font-family:Imperator;
+	color:#6c568f;
+	max-width:200px;
+	min-width:250px;
+	padding-left:25px;
+	float:left;
 }
 
 /*Rotation Photos*/
 #faded .slides {
-	border:solid 10px purple;
-	width:600px;
+	border:solid 10px #171227;
+	max-width:600px;
+	min-width:100px;
 	height:300px;
 	position:relative;
 	margin: 25px auto;
 }
 #faded .slides img {
 	position: absolute;
+	max-width:600px;
+	min-width:100px;
 	top:0px;
 	left:0px;
 }
@@ -112,7 +145,7 @@ footer {
 	padding: 5px 15px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:14px;
-	border:1px solid #740007; border-right:0px;
+	border:1px solid #6c568f; border-right:0px;
 	border-top-left-radius: 5px 5px;
 	border-bottom-left-radius: 5px 5px;
 }
@@ -126,18 +159,18 @@ footer {
 	text-align: center;
 	text-decoration: none;
 	color:black;
-	border: solid 1px #740007; border-right:0px;
-	background: #740007;
-	background: -webkit-gradient(linear, left top, left bottom, from(#740007), to(#8b0008));
-	background: -moz-linear-gradient(top,  #740007,  #8b0008);
+	border: solid 1px #6c568f; border-right:0px;
+	background: #6c568f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#592374), to(#6c568f));
+	background: -moz-linear-gradient(top,  #592374,  #6c568f);
 	border-top-right-radius: 5px 5px;
 	border-bottom-right-radius: 5px 5px;
 }
 .tfbutton:hover {
 	text-decoration: none;
-	background: #740007;
-	background: -webkit-gradient(linear, left top, left bottom, from(#740007), to(#a40009));
-	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	background: #6c568f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6e2f8d), to(#8067a7));
+	background: -moz-linear-gradient(top,  #6e2f8d,  #8067a7);
 }
 /* Fixes submit button height problem in Firefox */
 .tfbutton::-moz-focus-inner {
